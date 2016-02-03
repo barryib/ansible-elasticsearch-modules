@@ -2,6 +2,11 @@
 ### *Manage Users in an esusers Realm*
 
 ---
+### Note
+
+This module will remain here while wainting for its approval within [ansible-modules-extras](https://github.com/ansible/ansible-modules-extras) with the following [PR](https://github.com/ansible/ansible-modules-extras/pull/1574)
+
+---
 ### Requirements
 * [See how to manage users in an esusers Realm](https://www.elastic.co/guide/en/shield/current/managing-users.html)
 * See official Ansible docs
