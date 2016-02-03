@@ -57,8 +57,6 @@ Manage Elasticsearch users in an esusers Realm
 ```
 
 ---
-
----
 Created by Network to Code, LLC
 For: @barryib 2015
 
