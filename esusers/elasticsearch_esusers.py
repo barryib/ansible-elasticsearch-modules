@@ -132,9 +132,13 @@ class ESUsers(object):
         cmd_args = [self.esusers_bin, "list", username]
         cmd = " ".join(cmd_args)
         rc, out, err = self.module.run_command(cmd)
+        # User exist
         if rc == 0:
             return True, self._parse_user_roles(out)
-
+        # User doesn't exist
+        elif rc == 67:
+            return False, None
+        # Otherwise throw an error
         self.module.fail_json(msg=out)
 
     def user_del(self, username):
